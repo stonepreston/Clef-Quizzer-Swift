@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A140BBB199D8B2400FADDBA /* PracticeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BBA199D8B2400FADDBA /* PracticeScene.swift */; };
+		3A140BBF199D8DE300FADDBA /* TrainingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BBE199D8DE300FADDBA /* TrainingScene.swift */; };
+		3A140BC1199D8E4600FADDBA /* ChallengeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BC0199D8E4600FADDBA /* ChallengeScene.swift */; };
+		3A140BC3199D908800FADDBA /* PracticeHudNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BC2199D908800FADDBA /* PracticeHudNode.swift */; };
+		3A140BC5199D966300FADDBA /* ChallengeHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BC4199D966300FADDBA /* ChallengeHud.swift */; };
+		3A140BC7199DA24600FADDBA /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A140BC6199DA24600FADDBA /* GameOverScene.swift */; };
+		3A6A1ADF199C3B10001CDDDB /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3A6A1ADE199C3B10001CDDDB /* Sprites.atlas */; };
+		3A73ABFC199BEA4100AD13EC /* SpriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73ABFB199BEA4000AD13EC /* SpriteButton.swift */; };
 		3ADD55E81997C950009807BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD55E71997C950009807BB /* AppDelegate.swift */; };
-		3ADD55EA1997C950009807BB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3ADD55E91997C950009807BB /* GameScene.sks */; };
-		3ADD55EC1997C950009807BB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD55EB1997C950009807BB /* GameScene.swift */; };
-		3ADD55EE1997C950009807BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD55ED1997C950009807BB /* GameViewController.swift */; };
 		3ADD55F11997C951009807BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ADD55EF1997C951009807BB /* Main.storyboard */; };
 		3ADD55F31997C951009807BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADD55F21997C951009807BB /* Images.xcassets */; };
 		3ADD55FF1997C951009807BB /* Clef_QuizzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD55FE1997C951009807BB /* Clef_QuizzerTests.swift */; };
+		3ADD56091997C988009807BB /* ClefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD56081997C988009807BB /* ClefViewController.swift */; };
+		3ADD560B1997CB4B009807BB /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD560A1997CB4B009807BB /* NotesViewController.swift */; };
+		3ADD560D1997CCF5009807BB /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD560C1997CCF5009807BB /* GameState.swift */; };
+		3ADD560F1997CD54009807BB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD560E1997CD54009807BB /* Util.swift */; };
+		3ADD561119986BCC009807BB /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD561019986BCC009807BB /* ModeViewController.swift */; };
+		3ADD561319986F26009807BB /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADD561219986F26009807BB /* GameplayViewController.swift */; };
+		3AEA4CF2199960D500171F97 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA4CF1199960D500171F97 /* GameplayScene.swift */; };
+		3AEA4CF61999ADD300171F97 /* BackgroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA4CF51999ADD300171F97 /* BackgroundNode.swift */; };
+		3AEA4CF81999B8D100171F97 /* NoteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA4CF71999B8D100171F97 /* NoteNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +41,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A140BBA199D8B2400FADDBA /* PracticeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeScene.swift; sourceTree = "<group>"; };
+		3A140BBE199D8DE300FADDBA /* TrainingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainingScene.swift; path = ../TrainingScene.swift; sourceTree = "<group>"; };
+		3A140BC0199D8E4600FADDBA /* ChallengeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeScene.swift; path = ../ChallengeScene.swift; sourceTree = "<group>"; };
+		3A140BC2199D908800FADDBA /* PracticeHudNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeHudNode.swift; sourceTree = "<group>"; };
+		3A140BC4199D966300FADDBA /* ChallengeHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeHud.swift; sourceTree = "<group>"; };
+		3A140BC6199DA24600FADDBA /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3A6A1ADE199C3B10001CDDDB /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		3A73ABFB199BEA4000AD13EC /* SpriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteButton.swift; sourceTree = "<group>"; };
 		3ADD55E21997C950009807BB /* Clef Quizzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clef Quizzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD55E61997C950009807BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ADD55E71997C950009807BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ADD55E91997C950009807BB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		3ADD55EB1997C950009807BB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		3ADD55ED1997C950009807BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3ADD55F01997C951009807BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ADD55F21997C951009807BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3ADD55F81997C951009807BB /* Clef QuizzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clef QuizzerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADD55FD1997C951009807BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ADD55FE1997C951009807BB /* Clef_QuizzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clef_QuizzerTests.swift; sourceTree = "<group>"; };
+		3ADD56081997C988009807BB /* ClefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClefViewController.swift; sourceTree = "<group>"; };
+		3ADD560A1997CB4B009807BB /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		3ADD560C1997CCF5009807BB /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		3ADD560E1997CD54009807BB /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		3ADD561019986BCC009807BB /* ModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		3ADD561219986F26009807BB /* GameplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
+		3AEA4CF1199960D500171F97 /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameplayScene.swift; path = ../GameplayScene.swift; sourceTree = "<group>"; };
+		3AEA4CF51999ADD300171F97 /* BackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundNode.swift; path = ../BackgroundNode.swift; sourceTree = "<group>"; };
+		3AEA4CF71999B8D100171F97 /* NoteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteNode.swift; path = ../NoteNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +107,12 @@
 		3ADD55E41997C950009807BB /* Clef Quizzer */ = {
 			isa = PBXGroup;
 			children = (
-				3ADD55E71997C950009807BB /* AppDelegate.swift */,
-				3ADD55E91997C950009807BB /* GameScene.sks */,
-				3ADD55EB1997C950009807BB /* GameScene.swift */,
-				3ADD55ED1997C950009807BB /* GameViewController.swift */,
-				3ADD55EF1997C951009807BB /* Main.storyboard */,
+				3AEA4CF41999619C00171F97 /* Nodes */,
+				3AEA4CF31999618A00171F97 /* Scenes */,
+				3ADD56141998705A009807BB /* Menus */,
+				3ADD560C1997CCF5009807BB /* GameState.swift */,
+				3ADD560E1997CD54009807BB /* Util.swift */,
+				3A6A1ADE199C3B10001CDDDB /* Sprites.atlas */,
 				3ADD55F21997C951009807BB /* Images.xcassets */,
 				3ADD55E51997C950009807BB /* Supporting Files */,
 			);
@@ -93,6 +122,7 @@
 		3ADD55E51997C950009807BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3ADD55E71997C950009807BB /* AppDelegate.swift */,
 				3ADD55E61997C950009807BB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +143,42 @@
 				3ADD55FD1997C951009807BB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ADD56141998705A009807BB /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				3ADD56081997C988009807BB /* ClefViewController.swift */,
+				3ADD55EF1997C951009807BB /* Main.storyboard */,
+				3ADD561219986F26009807BB /* GameplayViewController.swift */,
+				3ADD561019986BCC009807BB /* ModeViewController.swift */,
+				3ADD560A1997CB4B009807BB /* NotesViewController.swift */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		3AEA4CF31999618A00171F97 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3A140BC0199D8E4600FADDBA /* ChallengeScene.swift */,
+				3A140BC6199DA24600FADDBA /* GameOverScene.swift */,
+				3A140BBE199D8DE300FADDBA /* TrainingScene.swift */,
+				3A140BBA199D8B2400FADDBA /* PracticeScene.swift */,
+				3AEA4CF1199960D500171F97 /* GameplayScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		3AEA4CF41999619C00171F97 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				3A140BC2199D908800FADDBA /* PracticeHudNode.swift */,
+				3A140BC4199D966300FADDBA /* ChallengeHud.swift */,
+				3A73ABFB199BEA4000AD13EC /* SpriteButton.swift */,
+				3AEA4CF71999B8D100171F97 /* NoteNode.swift */,
+				3AEA4CF51999ADD300171F97 /* BackgroundNode.swift */,
+			);
+			name = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6A1ADF199C3B10001CDDDB /* Sprites.atlas in Resources */,
 				3ADD55F31997C951009807BB /* Images.xcassets in Resources */,
-				3ADD55EA1997C950009807BB /* GameScene.sks in Resources */,
 				3ADD55F11997C951009807BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +281,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ADD55EC1997C950009807BB /* GameScene.swift in Sources */,
-				3ADD55EE1997C950009807BB /* GameViewController.swift in Sources */,
+				3A73ABFC199BEA4100AD13EC /* SpriteButton.swift in Sources */,
+				3A140BC5199D966300FADDBA /* ChallengeHud.swift in Sources */,
+				3ADD56091997C988009807BB /* ClefViewController.swift in Sources */,
+				3A140BC1199D8E4600FADDBA /* ChallengeScene.swift in Sources */,
+				3A140BC3199D908800FADDBA /* PracticeHudNode.swift in Sources */,
+				3A140BC7199DA24600FADDBA /* GameOverScene.swift in Sources */,
+				3AEA4CF81999B8D100171F97 /* NoteNode.swift in Sources */,
+				3AEA4CF2199960D500171F97 /* GameplayScene.swift in Sources */,
+				3ADD560B1997CB4B009807BB /* NotesViewController.swift in Sources */,
+				3ADD561319986F26009807BB /* GameplayViewController.swift in Sources */,
+				3ADD560D1997CCF5009807BB /* GameState.swift in Sources */,
+				3A140BBB199D8B2400FADDBA /* PracticeScene.swift in Sources */,
+				3ADD560F1997CD54009807BB /* Util.swift in Sources */,
 				3ADD55E81997C950009807BB /* AppDelegate.swift in Sources */,
+				3A140BBF199D8DE300FADDBA /* TrainingScene.swift in Sources */,
+				3ADD561119986BCC009807BB /* ModeViewController.swift in Sources */,
+				3AEA4CF61999ADD300171F97 /* BackgroundNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +365,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.1;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -321,9 +401,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos7.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -336,6 +416,7 @@
 				INFOPLIST_FILE = "Clef Quizzer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,6 +428,7 @@
 				INFOPLIST_FILE = "Clef Quizzer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -365,6 +447,7 @@
 				INFOPLIST_FILE = "Clef QuizzerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clef Quizzer.app/Clef Quizzer";
 			};
 			name = Debug;
@@ -380,6 +463,7 @@
 				INFOPLIST_FILE = "Clef QuizzerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clef Quizzer.app/Clef Quizzer";
 			};
 			name = Release;
@@ -403,6 +487,7 @@
 				3ADD56041997C951009807BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3ADD56051997C951009807BB /* Build configuration list for PBXNativeTarget "Clef QuizzerTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +496,7 @@
 				3ADD56071997C951009807BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
