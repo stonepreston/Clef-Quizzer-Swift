@@ -69,7 +69,7 @@ class PracticeHudNode: SKNode {
     }
     
     //not used, but required to be here
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         
         numberCorrect = 0
         numberIncorrect = 0

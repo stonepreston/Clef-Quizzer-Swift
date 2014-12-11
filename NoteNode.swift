@@ -30,16 +30,33 @@ class NoteNode: SKSpriteNode {
         
         //TODO: add tenor and alto clefs to the switch
         case ClefType.Treble:
-            if let noteType = TrebleNotes.fromRaw(self.type) {
+            if let noteType = TrebleNotes(rawValue: self.type) {
                 
                 self.letterName = noteType.letterName
                 
             }
+            
         case ClefType.Bass:
-            if let noteType = BassNotes.fromRaw(self.type) {
+            if let noteType = BassNotes(rawValue: self.type) {
                 
                 self.letterName = noteType.letterName
             }
+            
+        case ClefType.Tenor:
+            if let noteType = TenorNotes(rawValue: self.type) {
+                
+                self.letterName = noteType.letterName
+            }
+            
+        case ClefType.Alto:
+            if let noteType = AltoNotes(rawValue: self.type) {
+                
+                self.letterName = noteType.letterName
+            }
+            
+            
+            
+        
             
         default:
             //assign a default note of a until alto and tenor clefs are made
@@ -56,7 +73,7 @@ class NoteNode: SKSpriteNode {
         //colorizes the note
         if (colored) {
             
-            self.color = colors[self.letterName]
+            self.color = colors[self.letterName]!
             self.colorBlendFactor = 1.0
             
         } else {
@@ -69,10 +86,10 @@ class NoteNode: SKSpriteNode {
     }
     
     //not used but required to be here
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         //assign default values to properties
         self.clef = ClefType.Treble
-        self.type = TrebleNotes.ALower.toRaw()
+        self.type = TrebleNotes.ALower.rawValue
         self.colored = false
         self.letterName = "a"
         super.init(coder: aDecoder)

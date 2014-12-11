@@ -92,7 +92,7 @@ class ChallengeHud: SKNode {
             
             //remove the last life
             let name = String(format: "Life%d", GameState.sharedInstance.lives)
-            var lifeToRemove: SKNode = self.childNodeWithName(name)
+            var lifeToRemove: SKNode = self.childNodeWithName(name)!
             lifeToRemove.removeFromParent()
             
             //update the game state lives
@@ -107,7 +107,7 @@ class ChallengeHud: SKNode {
     }
     
     //note used but required to be here
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         
         //setup the score label
         scoreLabel = SKLabelNode(fontNamed: font)

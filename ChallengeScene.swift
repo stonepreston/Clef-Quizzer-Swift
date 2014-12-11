@@ -51,7 +51,7 @@ class ChallengeScene: GameplayScene {
             if (hud.loseLife()) {
                 
                 let gameOverScene: GameOverScene = GameOverScene(size: self.size)
-                self.view.presentScene(gameOverScene)
+                self.view!.presentScene(gameOverScene)
             }
         }
         
@@ -59,7 +59,7 @@ class ChallengeScene: GameplayScene {
         self.fadeLabelInAndOut(self.correctOrIncorrectLabel)
     }
     
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }

@@ -39,7 +39,7 @@ class SpriteButton: SKSpriteNode {
     }
     
     //called when the user taps the button
-    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         animateForTouchDown()
         
         
@@ -47,7 +47,7 @@ class SpriteButton: SKSpriteNode {
     }
     
     //called when the user finishes touching the button
-    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         animateForTouchUp()
         
         //call the function that gets set in the scene passing in the button as a parameter
@@ -73,7 +73,7 @@ class SpriteButton: SKSpriteNode {
     }
     
     //not used but required to be here
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         self.buttonType = ButtonType.A
         super.init(coder: aDecoder)
         

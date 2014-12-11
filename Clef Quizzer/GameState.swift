@@ -8,11 +8,6 @@
 
 import Foundation
 
-let GameStateHighScoreKeyTreble = "highScoreTreble";
-let GameStateHighScoreKeyBass = "highScoreBass";
-let GameStateHighScoreKeyAlto = "highScoreAlto";
-let GameStateHighScoreKeyTenor = "highScoreTenor";
-
 
 class GameState {
     

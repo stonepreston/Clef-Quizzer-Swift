@@ -43,17 +43,17 @@ class GameOverScene: SKScene {
     }
     
     //called when the user taps the scene
-    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         
         //restart the challenge
         let scene: ChallengeScene = ChallengeScene(size: self.size, colored: false)
         scene.scaleMode = SKSceneScaleMode.AspectFill
         
-        self.view.presentScene(scene)
+        self.view!.presentScene(scene)
 
     }
     
-   required init(coder aDecoder: NSCoder!) {
+   required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

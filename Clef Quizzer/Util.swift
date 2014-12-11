@@ -206,6 +206,125 @@ enum BassNotes: Int {
     
 };
 
+//tenor note types
+enum TenorNotes: Int {
+    
+    case CLower = 0,
+    DLower,
+    ELower,
+    FLower,
+    GLower,
+    ALower,
+    BLower,
+    CSpace,
+    DLine,
+    ESpace,
+    FLine,
+    GSpace,
+    ALine,
+    BSpace,
+    CLine,
+    DSpace,
+    ELine,
+    FSpace,
+    GUpper,
+    AUpper,
+    BUpper,
+    CUpper,
+    DUpper,
+    EUpper,
+    FUpper
+    
+    var letterName: String {
+        
+        switch self {
+            
+            case .ALine, .ALower, .AUpper:
+            return "a"
+            
+            case .BLower, .BUpper, .BSpace:
+            return "b"
+            
+            case .CLower, .CSpace, .CUpper, .CLine:
+            return "c"
+            
+            case .DLine, .DLower, .DUpper, .DSpace:
+            return "d"
+            
+            case .ELower, .ESpace, .EUpper, .ELine:
+            return "e"
+            
+            case .FLine, .FLower, .FSpace, .FUpper:
+            return "f"
+            
+            case .GLower, .GSpace, .GUpper:
+            return "g"
+            
+        }
+    }
+    
+};
+
+//alto note types
+enum AltoNotes: Int {
+    
+    case ELower = 0,
+    FLower,
+    GLower,
+    ALower,
+    BLower,
+    CLower,
+    DLower,
+    ESpace,
+    FLine,
+    GSpace,
+    ALine,
+    BSpace,
+    CLine,
+    DSpace,
+    ELine,
+    FSpace,
+    GLine,
+    ASpace,
+    BUpper,
+    CUpper,
+    DUpper,
+    EUpper,
+    FUpper,
+    GUpper,
+    AUpper
+    
+    var letterName: String {
+        
+        switch self {
+            
+            case .ALine, .ALower, .AUpper, .ASpace:
+            return "a"
+            
+            case .BLower, .BUpper, .BSpace:
+            return "b"
+            
+            case .CLower, .CUpper, .CLine:
+            return "c"
+            
+            case .DLower, .DUpper, .DSpace:
+            return "d"
+            
+            case .ELower, .ESpace, .EUpper, .ELine:
+            return "e"
+            
+            case .FLine, .FLower, .FSpace, .FUpper:
+            return "f"
+            
+            case .GLower, .GSpace, .GUpper, .GLine:
+            return "g"
+            
+        }
+    }
+    
+};
+
+
     
 
 

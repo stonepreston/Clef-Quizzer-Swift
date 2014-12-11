@@ -17,7 +17,7 @@ class TrainingScene: GameplayScene {
     }
     
     //not used but required to be here
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }

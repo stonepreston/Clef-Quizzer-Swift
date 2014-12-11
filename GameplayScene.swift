@@ -74,7 +74,7 @@ class GameplayScene: SKScene {
                 //pick a note type using the randomIndex
                 randomNoteType = self.noteTypes[randomIndex]
                 //create the note using the random note type
-                note = NoteNode(type: randomNoteType, clef: GameState.sharedInstance.clefType, frame: self.view.frame, colored: self.colored)
+                note = NoteNode(type: randomNoteType, clef: GameState.sharedInstance.clefType, frame: self.view!.frame, colored: self.colored)
             }
             
         }
@@ -196,7 +196,7 @@ class GameplayScene: SKScene {
             
             let imageName = value + "_button"
             let buttonTexture = SKTexture(imageNamed: imageName)
-            let button: SpriteButton = SpriteButton(texture: buttonTexture, buttonType: SpriteButton.ButtonType.fromRaw(value)!)
+            let button: SpriteButton = SpriteButton(texture: buttonTexture, buttonType: SpriteButton.ButtonType(rawValue: value)!)
             button.anchorPoint = CGPoint(x: 0, y: 0.5)
             button.name = value + "_button"
             button.position = CGPoint(x: startingX, y: 30)
@@ -206,7 +206,7 @@ class GameplayScene: SKScene {
             
             if (self.colored == true) {
                 
-                button.color = colors[value]
+                button.color = colors[value]!
                 button.colorBlendFactor = 1.0
                 
             } else {
@@ -232,7 +232,7 @@ class GameplayScene: SKScene {
     //checks the users answer to see if its correct
     func checkNoteForButton(button: SpriteButton) -> Bool {
         
-        if (currentNote.letterName == button.buttonType.toRaw()) {
+        if (currentNote.letterName == button.buttonType.rawValue) {
             
             //correct
             return true
@@ -270,7 +270,7 @@ class GameplayScene: SKScene {
         self.fadeLabelInAndOut(self.correctOrIncorrectLabel)
     }
     
-    required init(coder aDecoder: NSCoder!) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
